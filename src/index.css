@@ -1,10 +1,6 @@
 @import "tailwindcss";
 
 :root {
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -17,11 +13,11 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  color: white;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
+#root, html, body {
+  width: 100svw;
+  height: 100svh;
 }
+

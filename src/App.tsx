@@ -1,10 +1,14 @@
-import React from 'react'
+import {GlassCard, About, Qrcode, ContactLinks} from "./components"
 
 const App = () => {
   return (
-     <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+     <main className='grid place-content-center  w-full min-h-screen overflow-y-auto bg-[#101a23]'>
+      <GlassCard>
+        <About />
+        <Qrcode />
+        <ContactLinks />
+      </GlassCard>
+     </main>
   )
 }
 
