@@ -27,7 +27,6 @@ interface MatrixTextProps {
     letterAnimationDuration?: number;
     letterInterval?: number;
     tag?: keyof typeof motion;
-    className?: string
 }
 
 const MatrixText = ({

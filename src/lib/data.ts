@@ -1,5 +1,4 @@
 import { TbBrandLinkedin } from "react-icons/tb";
-import { RiTwitterXLine } from "react-icons/ri";
 import { VscGithub } from "react-icons/vsc";
 import { HiOutlineMail } from "react-icons/hi";
 
@@ -11,7 +10,9 @@ export const businessCard: IBusinessCard = {
     bio: {
         name: 'King Adarkwah',
         position: 'Senior Software Engineer + Designer',
-        description: 'Passionate about crafting intuitive and scalable web and mobile applications',
+        description: 'Passionate about crafting',
+        descriptionFlipText: ['intuitive', 'scalable', 'appealing'],
+        subDescription: 'web and mobile applications',
         contactLinks: [
             {
                 id: "1",
@@ -29,13 +30,6 @@ export const businessCard: IBusinessCard = {
             },
             {
                 id: "3",
-                name: 'twitter',
-                href: "https://twitter.com/yourusername",
-                icon: RiTwitterXLine,
-                iconHoverClass: 'hover:text-black transition-colors'
-            },
-            {
-                id: "4",
                 name: 'email',
                 href: "mailto:kingsley.adarkwah@gmail.com",
                 icon: HiOutlineMail,
@@ -45,11 +39,11 @@ export const businessCard: IBusinessCard = {
     },
     qrcodeUrl: 'https://meetking.vercel.app',
     typingText: [
-        {text: 'creativity', deleteAfter: true},
-        {text: 'design', deleteAfter: true}, 
-        {text: 'architecture', deleteAfter: true},
-        { text: 'code', deleteAfter: true}, 
-        {text: 'innovation', deleteAfter: false}
+        {text: 'creating', deleteAfter: true},
+        {text: 'designing', deleteAfter: true}, 
+        {text: 'architecting', deleteAfter: true},
+        { text: 'coding', deleteAfter: true}, 
+        {text: 'innovating', deleteAfter: false}
     ],
  
 }

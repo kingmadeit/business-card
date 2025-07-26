@@ -19,7 +19,7 @@ const childVariants = {
 };
 
 
-const ContactLinks = ({links}: {links: IContactLink[] | undefined}) => {
+const ContactLinks = ({links}: {links?: IContactLink[] | undefined}) => {
 
   if (!links) return null;
 
@@ -29,17 +29,13 @@ const ContactLinks = ({links}: {links: IContactLink[] | undefined}) => {
       initial="hidden"
       animate="show"
       className="flex space-x-4 justify-center items-center text-white/60 text-2xl">
-      {links.map(({id, href, icon, iconHoverClass}) => {
-        
-        const Icon = icon;
-
-        return (
+      {links.map(({id, href, icon: Icon, iconHoverClass}) => (
           <motion.a key={id} 
           variants={childVariants} href={href} target="_blank" rel="noopener noreferrer">
               <Icon className={iconHoverClass} />
           </motion.a>
         )
-      })}
+      )}
     </motion.div>
 
   )
