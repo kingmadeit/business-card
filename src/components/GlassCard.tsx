@@ -2,9 +2,11 @@ import React from "react";
 
 const GlassCard = ({ children, className = ''}: { children: React.ReactNode, className?: string }) => {
   return (
-    <div className={`backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg p-6 flex flex-col items-center justify-center text-center ${className}`}>
-      {children}
-    </div>
+    <section className={`glass-border-wrapper border-animated max-w-[320px] w-full mx-auto`}>
+      <div className={`glass-inner ${className}`}>
+        {children}
+      </div>
+    </section>
   );
 };
 
