@@ -42,6 +42,12 @@ export const businessCard: IBusinessCard = {
         ]
     },
     qrcodeUrl: 'https://meetking.vercel.app',
-    typingText: ['creativity', 'design', 'architecture', 'code', 'innovation'],
+    typingText: [
+        {text: 'creativity'},
+        {text: 'design'}, 
+        {text: 'architecture'},
+        { text: 'code'}, 
+        {text: 'innovation', deleteAfter: false}
+    ],
  
 }

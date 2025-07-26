@@ -1,10 +1,11 @@
 import type { IconType } from 'react-icons';
+import type { TypewriterSequence } from '../components/TypewriterLoop';
 
 
 export interface IBusinessCard {
     bio: IBio;
     qrcodeUrl: string;
-    typingText: string[],
+    typingText: TypewriterSequence[],
 }
 
 export interface IBio {
