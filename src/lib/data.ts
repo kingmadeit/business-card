@@ -4,6 +4,8 @@ import { VscGithub } from "react-icons/vsc";
 import { HiOutlineMail } from "react-icons/hi";
 
 import type { IBusinessCard } from "../types/type";
+import { createSlideIn, sharedTransition } from "../utils/animations";
+import type { Variants } from "motion/react";
 
 export const businessCard: IBusinessCard = {
     bio: {
@@ -51,3 +53,48 @@ export const businessCard: IBusinessCard = {
     ],
  
 }
+
+export const slideRight = createSlideIn("x", 50, -1);
+export const slideLeft = createSlideIn("x", -50, -1);
+export const slideUp = createSlideIn("y", -50, -1);
+
+// Fade-in animation
+export const fadeIn: Variants = {
+  initial: { opacity: 0 },
+  animate: {
+    opacity: 1,
+    transition: sharedTransition,
+  },
+  exit: {
+    opacity: 0,
+    transition: sharedTransition,
+  },
+};
+
+// Scale-in (zoom) animation
+export const scaleIn: Variants = {
+  initial: {
+    opacity: 0,
+    scale: 0.55,
+  },
+  animate: {
+    opacity: 1,
+    scale: 1,
+    transition: sharedTransition,
+  },
+  exit: {
+    opacity: 0,
+    scale: 0.95,
+    transition: sharedTransition,
+  },
+};
+
+// Staggered parent variant for group animations
+export const staggerParent = {
+  animate: {
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.2,
+    },
+  },
+};
