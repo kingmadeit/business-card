@@ -4,6 +4,7 @@ import ContactLinks from "./ContactLinks";
 import MatrixText from "./kokonut-ui/MatrixText";
 import { scaleIn, slideRight, slideLeft, slideUp } from "../lib/data";
 import { FlipWords } from "./kokonut-ui/FlipText";
+import {memo} from "react";
 
 
 const About = ({bio}: {bio: IBio}) => {
@@ -28,13 +29,16 @@ const About = ({bio}: {bio: IBio}) => {
                 <ContactLinks links={contactLinks}/>
             </div>
             <motion.div {...slideUp} className='will-change-transform text-gray-400 text-center text-xs pt-4'>
-                <p className="w-[80%] mx-auto text-shadow-sm">
-                    <span>{description}</span>
-                    {descriptionFlipText && <FlipWords
-                        words={descriptionFlipText}
-                        duration={3000}
-                        className="text-cyan-400 pl-1 font-bold"
-                    />}
+                <p className="w-[90%] mx-auto text-shadow-sm">
+                    <span className="w-full inline-block">
+                        <span>{description}</span>
+                        {descriptionFlipText && <FlipWords
+                            words={descriptionFlipText}
+                            duration={3000}
+                            className="text-cyan-400 pl-1 font-bold"
+                        />}
+                    </span>
+                    
                     <span>{subDescription}</span>
                 </p>
             </motion.div>
@@ -43,4 +47,4 @@ const About = ({bio}: {bio: IBio}) => {
   )
 }
 
-export default About
+export default memo(About)
