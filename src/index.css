@@ -21,3 +21,6 @@ body {
   height: 100svh;
 }
 
+.qrcode path:nth-child(2) {
+  fill: slategrey;
+}

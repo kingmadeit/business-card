@@ -1,8 +1,8 @@
 import React from "react";
 
-const GlassCard = ({ children, className }: { children: React.ReactNode, className?: string }) => {
+const GlassCard = ({ children, className = ''}: { children: React.ReactNode, className?: string }) => {
   return (
-    <div className={`backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg p-6 ${className}`}>
+    <div className={`backdrop-blur-md bg-white/10 border border-white/30 rounded-xl shadow-lg p-6 flex flex-col items-center justify-center text-center ${className}`}>
       {children}
     </div>
   );
