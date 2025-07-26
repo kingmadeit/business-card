@@ -12,8 +12,8 @@ const About = () => {
         </div>
         <div className='flex flex-col align-center'>
             <h2 className='font-bold'>King Adarkwah</h2>
-            <small>Senior FullStack Engineer &amp; Designer</small>
-            <div className='text-blue-200 text-center'>
+            <small className='text-[#90adcb]'>Senior FullStack Engineer &amp; Designer</small>
+            <div className='text-gray-400 text-center text-xs pt-4'>
                 <p>Passionate about crafting intuitive and scalable web and mobile applications </p>
                 <p>Code, Design, Innovation</p>
             </div>
