@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import type { IContactLink } from "../types/type";
+import {memo} from 'react';
 
 // Parent animation container
 const containerVariants = {
@@ -41,4 +42,4 @@ const ContactLinks = ({links}: {links?: IContactLink[] | undefined}) => {
   )
 }
 
-export default ContactLinks
+export default memo(ContactLinks)
