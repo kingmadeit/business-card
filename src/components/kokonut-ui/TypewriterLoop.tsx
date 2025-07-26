@@ -138,7 +138,7 @@ export default function TypewriterLoop({
                 >
                     <span
                         data-typewriter
-                        className="inline-block border-r-1 border-white/50 animate-cursor pr-1"
+                        className="inline-block border-r-1 text-white/40 border-white/30 animate-cursor pr-1"
                     >
                         {sequences[0].text}
                     </span>
