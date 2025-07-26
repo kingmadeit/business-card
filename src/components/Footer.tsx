@@ -1,15 +1,17 @@
 import TypewriterLoop, { type TypewriterSequence } from "./kokonut-ui/TypewriterLoop"
+import { slideRight } from "../lib/data";
+import { motion } from "motion/react";
 
 const Footer = ({typingText}: {typingText: TypewriterSequence[]}) => {
   return (
-    <footer className='w-full mt-4 p-4 pb-0 border-t-1 border-white/30'>
+    <motion.footer {...slideRight} className='will-change-transform w-full mt-4 p-4 pb-0 border-t-1 border-white/30'>
         <TypewriterLoop 
           typingSpeed={100}
-          startDelay={1000}
+          startDelay={1500}
           loopDelay={2000}
           sequences={typingText} 
         />
-    </footer>
+    </motion.footer>
   )
 }
 

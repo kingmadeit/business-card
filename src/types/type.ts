@@ -12,6 +12,8 @@ export interface IBio {
     name: string;
     position: string;
     description?: string;
+    subDescription?: string;
+    descriptionFlipText?: string[];
     contactLinks?: IContactLink[];
 }
 

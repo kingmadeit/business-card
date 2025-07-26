@@ -26,6 +26,7 @@ interface MatrixTextProps {
     initialDelay?: number;
     letterAnimationDuration?: number;
     letterInterval?: number;
+    tag?: keyof typeof motion;
 }
 
 const MatrixText = ({
@@ -33,6 +34,8 @@ const MatrixText = ({
     initialDelay = 200,
     letterAnimationDuration = 500,
     letterInterval = 100,
+    tag = "h2",
+    className = ''
 }: MatrixTextProps) => {
     const [letters, setLetters] = useState<LetterState[]>(() =>
         text.split("").map((char) => ({
@@ -116,12 +119,14 @@ const MatrixText = ({
         []
     );
 
+    const MotionTag = motion(tag);
+
     return (
        <div className="flex flex-wrap items-center justify-center">
             {letters.map((letter, index) => (
-                <motion.h2
+                <MotionTag
                     key={`${index}-${letter.char}`}
-                    className="font-bold text-center overflow-hidden"
+                    className={`text-center overflow-hidden ${className}`}
                     initial="initial"
                     animate={letter.isMatrix ? "matrix" : "normal"}
                     variants={motionVariants}
@@ -135,7 +140,7 @@ const MatrixText = ({
                     }}
                 >
                     {letter.isSpace ? "\u00A0" : letter.char}
-                </motion.h2>
+                </MotionTag>
             ))}
         </div>
     );
