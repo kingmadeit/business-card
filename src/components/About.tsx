@@ -1,7 +1,12 @@
-const About = () => {
+import type { IBio } from "../types/type"
+import ContactLinks from "./ContactLinks";
+import MatrixText from "./kokonut-ui/MatrixText";
+
+const About = ({bio}: {bio: IBio}) => {
+  const {name, position, description, contactLinks } = bio;  
   return (
     <section className='flex flex-col space-y-4 items-center'>
-        <div className="w-[100px] h-[100px] md:w-[200px] md:h-[200px] border border-green-400 rounded-full overflow-hidden">
+        <div className="w-[100px] h-[100px] md:w-[150px] md:h-[150px] border border-green-400 rounded-full overflow-hidden">
             <img
                 className="w-full h-full object-cover object-center"
                 src="me.jpg"
@@ -9,10 +14,13 @@ const About = () => {
             />
         </div>
         <div className='flex flex-col align-center text-center'>
-            <h2 className='font-bold'>King Adarkwah</h2>
-            <small className='text-[#90adcb]'>Senior FullStack Engineer &amp; Designer</small>
+            <MatrixText text={name}/>
+            <small className='text-[#90adcb]'>{position}</small>
+            <div className="pt-4">
+                <ContactLinks links={contactLinks}/>
+            </div>
             <div className='text-gray-400 text-center text-xs pt-4'>
-                <p>Passionate about crafting intuitive and scalable web and mobile applications </p>
+                <p>{description}</p>
             </div>
         </div>
     </section>
