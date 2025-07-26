@@ -1,5 +1,5 @@
 import type { IconType } from 'react-icons';
-import type { TypewriterSequence } from '../components/TypewriterLoop';
+import type { TypewriterSequence } from '../components/kokonut-ui/TypewriterLoop';
 
 
 export interface IBusinessCard {

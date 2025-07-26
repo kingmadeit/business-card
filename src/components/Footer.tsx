@@ -1,4 +1,4 @@
-import TypewriterLoop, { type TypewriterSequence } from "./TypewriterLoop"
+import TypewriterLoop, { type TypewriterSequence } from "./kokonut-ui/TypewriterLoop"
 
 const Footer = ({typingText}: {typingText: TypewriterSequence[]}) => {
   return (

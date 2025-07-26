@@ -1,5 +1,6 @@
 import type { IBio } from "../types/type"
 import ContactLinks from "./ContactLinks";
+import MatrixText from "./kokonut-ui/MatrixText";
 
 const About = ({bio}: {bio: IBio}) => {
   const {name, position, description, contactLinks } = bio;  
@@ -13,7 +14,7 @@ const About = ({bio}: {bio: IBio}) => {
             />
         </div>
         <div className='flex flex-col align-center text-center'>
-            <h2 className='font-bold'>{name}</h2>
+            <MatrixText text={name}/>
             <small className='text-[#90adcb]'>{position}</small>
             <div className="pt-4">
                 <ContactLinks links={contactLinks}/>
