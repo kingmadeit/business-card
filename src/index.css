@@ -23,13 +23,14 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
   color: white;
+  /* background: rgb(40, 178, 216); */
+  /* background: oklch(43.597% 0.07615 212.542); */
+  background: oklch(0.45 0.16 341.53)
 }
 
 #root, html, body {
   width: 100svw;
-  height: 100svh;
 }
 
 .qrcode path:nth-child(2) {
@@ -74,4 +75,8 @@ body {
   height: 100%;
   position: relative;
   z-index: 10;
+}
+
+.avatar {
+  border: 2px solid oklch(0.89 0.1 196.25);
 }

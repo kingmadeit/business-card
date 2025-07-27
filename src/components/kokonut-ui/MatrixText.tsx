@@ -112,8 +112,8 @@ const MatrixText = ({
     const motionVariants = useMemo(
         () => ({
             matrix: {
-                color: "#53da53ff",
-                textShadow: "0 2px 4px rgba(0, 255, 0, 0.5)",
+                color: "#84f0f1",
+                textShadow: "0 2px 4px hsla(173, 71%, 49%, 0.63)",
             }
         }),
         []
