@@ -11,7 +11,7 @@ const About = ({bio}: {bio: IBio}) => {
   const {name, position, description, subDescription, descriptionFlipText, contactLinks } = bio;  
   return (
     <section className='flex flex-col space-y-4 items-center'>
-        <motion.div {...scaleIn} className="w-[100px] h-[100px] md:w-[150px] md:h-[150px] border border-green-300 rounded-full overflow-hidden">
+        <motion.div {...scaleIn} className="w-[100px] h-[100px] md:w-[150px] md:h-[150px] avatar rounded-full overflow-hidden">
             <img
                 className="w-full h-full object-cover object-center"
                 src="me.jpg"
