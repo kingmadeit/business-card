@@ -23,7 +23,7 @@ const ShareContact = () => {
   return (
     <button
       onClick={handleShare}
-      className="text-gray-400 hover:text-blue-500 transition z-50 cursor-pointer"
+      className="text-gray-300 hover:text-blue-500 transition z-50 cursor-pointer"
       aria-label="Share"
     >
       <GoShare className="w-5 h-5 md:w-6 md:h-6" />

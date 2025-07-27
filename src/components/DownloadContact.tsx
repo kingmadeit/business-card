@@ -5,7 +5,7 @@ const DownloadContact = () => {
     <a
       href="/contact.vcf"
       download
-      className="inline-block line-height-0 rounded-full text-gray-400 shadow-lg hover:text-white transition z-50">
+      className="inline-block line-height-0 rounded-full text-gray-300 shadow-lg hover:text-white transition z-50">
       <RxDownload className="h-5 w-5 md:w-6 md:h-6" />
     </a>
   );
