@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Adarkwah;King;;;
+FN:King Adarkwah
+ORG:KingMadeIt LLC
+TITLE:Senior Software Engineer + Designer
+TEL;TYPE=WORK,VOICE:(718) 724-4383
+EMAIL;TYPE=PREF,INTERNET:kingsley.adarkwah@gmail.com
+URL:https://meetking.vercel.app
+END:VCARD
