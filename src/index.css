@@ -61,7 +61,7 @@ body {
 }
 
 .glass-inner {
-  background: rgba(255, 255, 255, 0.20);
+  /* background: rgba(255, 255, 255, 0.20); */
   backdrop-filter: blur(12px);
   border-radius: 1rem;
   padding: 1.5rem;
