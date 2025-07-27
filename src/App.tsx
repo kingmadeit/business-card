@@ -6,7 +6,7 @@ const {bio, qrcodeUrl, typingText} = businessCard;
 
 const App = () => {
   return (
-     <main className='flex justify-center items-center w-full min-h-screen overflow-y-auto bg-[#101a23] mx-auto'>
+     <main className='flex relative justify-center items-center w-full min-h-screen overflow-y-auto bg-[#101a23] mx-auto'>
       <motion.div {...slideUp} className="transform-gpu">
         <GlassCard className="align-center space-y-4 w-full">
           <About bio={bio} />

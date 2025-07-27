@@ -92,3 +92,9 @@ export const staggerParent = {
     },
   },
 };
+
+export const shareContactInfo: {title: string, text: string, url: string} = {
+  title: "KingMadeIt",
+  text: "Check out King's business card for contact details!",
+  url: "https://meetking.vercel.app",
+}
